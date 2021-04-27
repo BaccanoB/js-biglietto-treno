@@ -41,7 +41,7 @@ console.log(prezzoFinale);
 
 document.getElementById("nome").innerHTML = nome;
 
-document.getElementById("km").innerHTML = "KM " + numeroKm;
+document.getElementById("km").innerHTML = numeroKm;
 
 document.getElementById("prezzo").innerHTML = "&euro; " + prezzoFinale;
 
