@@ -19,19 +19,31 @@ console.log(prezzoBiglietto);
 
 // applicazione sconti al biglietto
 var sconto;
-console.log(sconto);
 
 if (eta < 18) {
-   sconto = (prezzoBiglietto / 100) * 80;
+   sconto = (prezzoBiglietto / 100) * 20;
 } else if (eta >= 65) {
-    sconto = (prezzoBiglietto / 100) * 60;
+    sconto = (prezzoBiglietto / 100) * 40;
+} else {
+    sconto = 0;
 }
 
 // arrotondare prezzo con massimo due decimali
 
-var sconto = sconto.toFixed(2);
+sconto = sconto.toFixed(2);
+console.log(sconto);
+
+var prezzoFinale = prezzoBiglietto - sconto;
+console.log(prezzoFinale);
+
 
 // visualizzare prezzo in pagina
+
+document.getElementById("nome").innerHTML = nome;
+
+document.getElementById("km").innerHTML = "KM " + numeroKm;
+
+document.getElementById("prezzo").innerHTML = "&euro; " + prezzoFinale;
 
 
 
