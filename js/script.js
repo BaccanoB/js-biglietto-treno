@@ -1,3 +1,7 @@
+// nome utente
+
+var nome = prompt("Inserisci il tuo nome")
+
 // chiedere all'utente il numero di km
 
 var numeroKm = parseInt(prompt("Inserisci il numero di Km che vuoi percorrere"));
@@ -18,14 +22,19 @@ var sconto;
 console.log(sconto);
 
 if (eta < 18) {
-   sconto = prezzoBiglietto - 20;
-} else (eta >= 65) {
-    sconto = prezzoBiglietto - 40;
+   sconto = (prezzoBiglietto / 100) * 80;
+} else if (eta >= 65) {
+    sconto = (prezzoBiglietto / 100) * 60;
 }
 
 // arrotondare prezzo con massimo due decimali
 
+var sconto = sconto.toFixed(2);
+
 // visualizzare prezzo in pagina
+
+
+
 
 
 
